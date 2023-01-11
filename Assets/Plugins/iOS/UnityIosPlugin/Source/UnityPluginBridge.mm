@@ -6,9 +6,13 @@ extern "C" {
     
 #pragma mark - Functions
     
-    int _addTwoNumberInIOS(int a , int b) {
+    NSString* _addTwoNumberInIOS(int a , int b) {
        
-        int result = [[UnityPlugin shared] AddTwoNumberWithA:(a) b:(b)];
+        NSString result = [[UnityPlugin shared] AddTwoNumberWithA:(a) b:(b)];
         return result;
+    }
+
+    void _start {
+        [[UnityPlugin shared] Start];
     }
 }

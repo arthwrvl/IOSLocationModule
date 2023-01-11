@@ -9,16 +9,16 @@ public class PluginHelper : MonoBehaviour
     [SerializeField] private TextMeshProUGUI textResult;
 
     [DllImport("__Internal")]
-    private static extern int _addTwoNumberInIOS(int a, int b);
+    private static extern string _addTwoNumberInIOS(int a, int b);
+    private static extern void _start();
 
-    void Start()
-    {
-        AddTwoNumber();
-    }
 
     public void AddTwoNumber()
     {
-        int result = _addTwoNumberInIOS(10, 5);
+        string result = _addTwoNumberInIOS(10, 5);
         textResult.text = "10 + 5  is : " + result;
+    }
+    public void Start() {
+        _start();
     }
 }
