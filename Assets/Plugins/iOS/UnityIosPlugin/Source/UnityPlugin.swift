@@ -4,7 +4,7 @@ import CoreLocation
 @objc public class UnityPlugin : NSObject, CLLocationManagerDelegate  {
     
     var manager: CLLocationManager = CLLocationManager()
-    let result = 0
+    let result = ""
     @objc public static let shared = UnityPlugin()
     @objc public func AddTwoNumber(a:Int,b:Int ) -> String {
         
