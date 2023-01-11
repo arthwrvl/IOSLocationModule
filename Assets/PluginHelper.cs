@@ -10,6 +10,7 @@ public class PluginHelper : MonoBehaviour
 
     [DllImport("__Internal")]
     private static extern string _addTwoNumberInIOS(int a, int b);
+    [DllImport("__Internal")]
     private static extern void _start();
 
 
