@@ -31,7 +31,7 @@ extern UIViewController *UnityGetGLViewController();
 
 extern "C" {
     
-    void _ShowAlert(const chat *title, const char *message){
+    void _ShowAlert(const char *title, const char *message){
         [iOSPlugin alertView:[NSString stringWithUTF8String:title] addMessage:[NSString stringWithUTF8String:message]];
     }
 }
