@@ -23,7 +23,7 @@ extern UIViewController *UnityGetGLViewController();
         handler:^(UIAlertAction *action){}];
 
     [alert addAction:defaultAction];
-    [self presentViewController:alert animated:YES completion:nil];
+    [UnityGetGLViewController() presentViewController:alert animated:YES completion:nil];
 }
 
 
@@ -32,6 +32,6 @@ extern UIViewController *UnityGetGLViewController();
 extern "C" {
     
     void _ShowAlert(const chat *title, const char *message){
-        [iOSPlugin [alertView:title, message]];
+        [iOSPlugin alertView:[NSString stringWithUTF8String:title] addMessage:[NSString stringWithUTF8String:message]];
     }
 }
