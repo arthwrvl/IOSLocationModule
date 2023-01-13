@@ -2,7 +2,6 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 #import <CoreLocation/CoreLocation.h>
-#include "UnityFramework/UnityFramework-Swift.h"
 
 extern UIViewController *UnityGetGLViewController();
 
