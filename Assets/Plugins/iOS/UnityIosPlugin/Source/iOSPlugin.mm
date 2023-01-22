@@ -2,6 +2,7 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 #import <CoreLocation/CoreLocation.h>
+#import <UserNotifications/UserNotifications.h>
 
 extern UIViewController *UnityGetGLViewController();
 

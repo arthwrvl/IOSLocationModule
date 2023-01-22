@@ -3,7 +3,6 @@ using System.Runtime.InteropServices;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
-
 public class PluginHelper : MonoBehaviour
 {
     [SerializeField] private TextMeshProUGUI textResult;
